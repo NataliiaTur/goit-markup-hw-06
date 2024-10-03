@@ -21,29 +21,17 @@ img {
     display: block;
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.container {
+width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
 }
 
 .header-container {
     max-width: 100%;
-    background-color: yellowgreen;
-    display: flex;
-    align-items: center;
-}
-
-.header-container, .nav-list, .menu-nav, .adrs-box-list {
     display: flex;
     flex-direction: row;
-}
-
-.logo-one, .logo-two {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 0px;
 }
 
 .logo-one {
@@ -54,12 +42,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
-    margin-top: 25.5px;
-    margin-right: 0;
-    margin-bottom: 25.5px;
-    margin-left: 156px;
 }
 
 .logo-two {
@@ -69,8 +51,12 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-right: 76px;
-    margin: 0; 76px; 0; 200px;
 }
 
 .menu-nav {
@@ -78,17 +64,18 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 261px;
-    height: 24px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
-    gap: 40px;
     margin-right: 332px;
-    margin-left: 76px;
 }
-
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
 .nav-link {
     color: #2e2f42;
 }
@@ -99,12 +86,17 @@ img {
 
 .adrs-box {
     font-style: normal;
+    margin-left: 0;
 }
 
 .adrs-box-list {
-padding-top: 24px;
-padding-bottom: 24px;
-gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
+    margin-right: 0;
 }
 
 .adrs-link {
@@ -113,7 +105,6 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    gap: 40px;
 }
 
 .adrs-link:hover, .adrs-link:focus {
@@ -130,7 +121,6 @@ gap: 40px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    text-align: center;
 }
 
 .big-section-bttn {
