@@ -30,6 +30,7 @@ img {
 
 .header-container {
     display: flex;
+    width: 1128px;
     flex-direction: row;
     border-bottom: 1px solid #e7e9fc;
     justify-content: space-between;
