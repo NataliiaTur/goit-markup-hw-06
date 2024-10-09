@@ -305,6 +305,7 @@ border-bottom: 1px solid #e7e9fc;
 
 .team-card-title {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-card-text {
@@ -315,7 +316,7 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .team-card-content {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -380,8 +381,8 @@ padding-bottom: 120px;
 
 .section-footer {
     background-color: #2e2f42;
-    padding-top: 99px;
-    padding-bottom: 101px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section-footer-container {
