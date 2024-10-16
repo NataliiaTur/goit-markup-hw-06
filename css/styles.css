@@ -66,6 +66,9 @@ img {
 
 .top-line {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);;
 }
 
 .header-container {
@@ -118,21 +121,28 @@ border-bottom: 1px solid #e7e9fc;
     display: block;
     color: #2e2f42;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, 
+.nav-link:focus, 
+.nav-link.current {
     color: #404bbf;
 }
 
-.nav-link-strip::after {
+.nav-link.current {
+    position: relative;
+}
+
+.nav-link.current::after{
     content: '';
-    display: block;
-    height: 4px;
-    border-radius: 2px;
-    width: 48px;
-    background-color: #404bbf;
     position: absolute;
-    bottom: 0;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+    bottom: -1px;
+    background-color: #404bbf;
 }
 
 .adrs-box {
@@ -145,6 +155,7 @@ border-bottom: 1px solid #e7e9fc;
     align-items: center;
     gap: 40px;
     padding-right: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adrs-link {
@@ -270,7 +281,8 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .icon-antenna,
-.icon-clock, .icon-diagram,
+.icon-clock, 
+.icon-diagram,
 .icon-austronaut {
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -306,7 +318,6 @@ border-bottom: 1px solid #e7e9fc;
     color: #2e2f42;
     margin-bottom: 72px;
 }
-
 .team-menu {
     display: flex;
     gap: 24px;
@@ -381,6 +392,7 @@ border-bottom: 1px solid #e7e9fc;
     position: absolute;
 }
 
+
 /*section3-portfolio*/
 
 .portfolio-section{
@@ -414,6 +426,11 @@ padding-bottom: 120px;
     width: calc((100% - 48px) / 3);
 }
 
+
+.portfolio-card:hover {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .prtfl-card-content {
     align-items: flex-start;
     justify-content: center;
@@ -429,6 +446,32 @@ padding-bottom: 120px;
 .prtfl-card-title {
     margin-bottom: 8px;
 }
+
+.portfolio-thumb-foto {
+    position: relative;
+    overflow: hidden;
+}
+
+.prtfl-overlay-text {
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-thumb-foto:hover .prtfl-overlay-text {
+    transform: translateY(0);
+}
+
 
 /*footer*/
 
@@ -471,7 +514,7 @@ padding-bottom: 120px;
     max-width: 264px;
 }
 
-.footer-title-social {
+.footer-text-social {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -492,7 +535,7 @@ padding-bottom: 120px;
     max-width: 208px; 
 }
 
-.footer-social-link {
+.ftr-social-link-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
