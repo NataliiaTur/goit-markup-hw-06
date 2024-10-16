@@ -449,25 +449,27 @@ padding-bottom: 120px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.prtfl-card-content {
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    border-top: none;
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    padding: 32px 16px;
+.prtfl-foto {
+    margin-bottom: 32px;
 }
 
 .prtfl-card-title {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+   padding-left: 16px;
+}
+
+.prtfl-card-text {
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 .portfolio-thumb-foto {
     position: relative;
     overflow: hidden;
+    border-top: none;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 .prtfl-overlay-text {
