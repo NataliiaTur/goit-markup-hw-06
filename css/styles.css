@@ -41,10 +41,6 @@ img {
     margin-right: 0;
 }
 
-.section-card {
-    background-color: #FFFFFF;
-}
-
 .card-title {
     font-weight: 500;
     font-size: 20px;
@@ -225,7 +221,7 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     border-width: 0;
     min-width: 169px;
     border: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .big-section-bttn:hover, .big-section-bttn:focus {
@@ -282,15 +278,16 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     width: calc((100% - 72px) / 4);
 }
 
-.icon-antenna,
-.icon-clock, 
-.icon-diagram,
-.icon-austronaut {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 112px;
     background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    width: 264px;
+    margin-bottom: 8px;
 }
 
 .ftr-card-title {
@@ -371,7 +368,7 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
 }
 
 .team-thumb-foto {
-padding: 32px, 0;
+    padding: 32px, 0;
 }
 
 .team-social-menu {
@@ -431,6 +428,10 @@ padding-bottom: 120px;
     margin-bottom: 72px;
 }
 
+.prtfl-card-text:hover {
+    transform: translateY(0%);
+}
+
 .portfolio-section-menu {
     display: flex;
     flex-wrap: wrap;
@@ -483,8 +484,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 40px;
-    padding-bottom: 164px;
+    padding: 40px, 32px;
     justify-content: center;
 }
 
@@ -510,7 +510,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 .section-footer-container {
     max-width: 1128px;
     display: flex;
-    align-items: baseline,
+    align-items: baseline;
 }
 
 .footer-text-content {
