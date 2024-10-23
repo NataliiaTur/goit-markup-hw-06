@@ -50,7 +50,7 @@
         <section class="big-section">
             <div class="container big-section-container">
                 <h1 class="big-section-title">Effective Solutions for Your Business</h1>
-                <button class="big-section-bttn" type="button"><span class="big-section-bttn-text">Order
+                <button class="big-section-bttn" data-modal-open type="button"><span class="big-section-bttn-text">Order
                         Service</span></button>
             </div>
         </section>
@@ -406,28 +406,32 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-input">
-                <form class="footer-form-subscribe">
-                    <label class="footer-title-subscribe" for="footer-email">Subscribe</label>
-                    <input class="footer-input-email" type="email"
-                    name="footer-form-email"
-                    id="footer-email">
-                    <button type="submit">Subscribe
+            <div class="footer-form-input">
+                <p class="footer-form-title">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-label" for="email" name="email">
+                        <input class="footer-input" type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="E-mail"
+                        autocomplete="off"/>
+                    </label>
+                    <button class="footer-input-button" type="submit">Subscribe
                         <svg width="24" height="24">
-                            <use href="./images/symbol-defs-modal.svg#icon-Frame-3"></use>
+                            <use href="./images/symbol-defs-modal.svg#icon-Frame-3">
+                            </use>
                         </svg>
-                    </button> 
-
+                    </button>
                 </form>
             </div>
 
         </div>
     </footer>
  
-    <div class="backdrop is-open">
+    <div class="backdrop is-open" data-modal>
         <div class="modal">
             <div class="wrapper-modal-bttn-title">
-                <button class="form-button-close" type="button">
+                <button class="form-button-close" data-modal-close type="button">
                     <svg class="modal-buttn-icon" height="8" width="8">
                         <use href="./images/symbol-defs-modal.svg#icon-close-black"></use>
                     </svg>
@@ -488,22 +492,33 @@
                         autocomplete="off"
                         required></textarea>
                 </div>
-                <div class="modal-field">
-                    <div class="wrapper-checkbox-icon">
-                        <input class="input-checkbox" 
+                <div class="wrapper-checkbox-icon">
+                    <input class="input-checkbox-hidden" 
                         type="checkbox" 
-                        name="check-mark">
-                        <svg class="icon-modal" width="10" height="8">
-                        <use href="./images/symbol-defs-modal.svg#icon-Vector"></use>
-                    </svg>
+                        name="custom-check"
+                        autocomplete="off"/>
+                    <label class="label-checkbox" for="checkbox">
+                        <span class="wrapp-futter-checkbox-custom">
+                            <input class="futter-checkbox-custom" 
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox"
+                                autocomplete="off"/>
+                            <svg class="icon-modal-checkbox" width="10" height="8">
+                                <use href="./images/symbol-defs-modal.svg#icon-Vector">
+                                </use>
+                            </svg>
+                        </span>
+                        <p class="modal-accept-text">I accept the terms and conditions of the 
+                            <a href="" class="modal-accept-link" target="_blank">Privacy
+                                Policy</a>
+                        </p>
+                    </label>
                 </div>
-                    <p class="modal-accept-text">I accept the terms and conditions of the <span class="modal-accept-link">Privacy Policy</span></p>
-                </div>
-                <button class="modal-button" 
-                        type="submit">Send</button>
-
+                <button class="modal-button" type="submit">Send</button>
             </form>
         </div>
     </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
