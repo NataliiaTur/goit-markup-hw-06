@@ -774,7 +774,11 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     border: 1px solid #4d5ae5;
 }
 
-.input:active + .icon-modal,
+.input:active + .icon-modal, .textarea:active {
+    fill: #4d5ae5;
+}
+
+.input:checked+.icon-modal,
 .textarea:active {
     fill: #4d5ae5;
 }
@@ -824,22 +828,30 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .futter-checkbox-custom {
-    fill: transparent;
-}
-
-.futter-checkbox-custom:checked + .label-checkbox < .wrapp-futter-checkbox-custom {
-    fill: #f4f4fd;
-}
-
-.wrapp-futter-checkbox-custom {
     width: 16px;
     height: 16px;
+
     display: flex;
     flex-direction: center;
     align-items: center;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
+    
+    position: relative;
+}
+
+.icon-modal-checkbox {
+    fill: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.futter-checkbox-custom[type="checkbox"]:checked {
+    border-radius: 2px;
+    fill: #404bbf;
+    border: 1px solid #404bbf;
 }
 
 .modal-accept-text {
@@ -861,20 +873,26 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .modal-button {
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    margin: 0 auto;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
     border: none;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-button:hover, .modal-button:focus {
