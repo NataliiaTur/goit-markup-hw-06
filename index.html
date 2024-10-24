@@ -440,12 +440,12 @@
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="modal-field">
-                    <label class="label lbl-username" for="username">Name</label>
+                    <label class="label" for="user-name">Name</label>
                     <div class="wrapper-field-icon">
                         <input class="input" 
                         type="text" 
-                        name="username" 
-                        id="username" 
+                        name="user-name" 
+                        id="user-name" 
                         autofocus
                         autocomplete="off"
                         required/>
@@ -473,12 +473,12 @@
                     </div>
                 </div>
                 <div class="modal-field">
-                    <label class="label" for="email">Email</label>
+                    <label class="label" for="user-mail">Email</label>
                     <div class="wrapper-field-icon">
                         <input class="input" 
                         type="email" 
-                        name="e-mail" 
-                        id="email"
+                        name="user-mail" 
+                        id="user-mail"
                         autocomplete="off"
                         required/>
                         <svg class="icon-modal" width="18" height="18">
@@ -489,34 +489,24 @@
                     <label class="label" for="user-comment">Comment</label>
                     <textarea class="textarea" 
                         name="user-comment" 
-                        id="modal-comment" 
+                        id="user-comment" 
                         placeholder="Text input"
                         autocomplete="off"
                         required></textarea>
                 </div>
-                <div class="wrapper-checkbox-icon">
-                    <input class="visually-hidden" 
+                <div class="modal-wrapper-checkbox">
+                    <input class="modal-input-hidden visually-hidden" 
                         type="checkbox" 
                         name="user-privacy"
-                        id="user-privacy"
+                        id="checkbox"
                         value="true"/>
-                    <label class="label-checkbox" for="user-privacy">
-                        <p class="modal-accept-text">I accept the terms and conditions of the 
-                            <a href="" class="modal-accept-link" 
-                            target="_blank">Privacy Policy</a>
-                        </p>
-                        <span class="span-futter-checkbox-custom">
-                            <input class="futter-checkbox-custom-hidden" 
-                                type="checkbox"
-                                name="checkbox"
-                                id="checkbox"/>
+                    <label class="label-checkbox-text" for="checkbox">
+                        <span class="span-checkbox-custom">
                             <svg class="icon-modal-checkbox" width="10" height="8">
-                                <use href="./images/icons.svg#icon-Vector">
-                                </use>
+                                <use href="./images/icons.svg#icon-Vector"></use>
                             </svg>
-                        </span>
+                        </span>I accept the terms and conditions of the <a href="" class="modal-accept-link" target="_blank">Privacy Policy</a>   
                     </label>
-
                     </p>
                 </div>
                 <button class="modal-button" type="submit">Send</button>
