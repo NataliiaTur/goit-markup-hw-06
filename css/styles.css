@@ -897,7 +897,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     fill: #4D5AE5;
 }
 
-.modal-input-hidden:checked + .span-checkbox-custom {
+.modal-input-hidden:checked + .label-checkbox-text > .span-checkbox-custom {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
