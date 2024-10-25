@@ -876,7 +876,9 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -891,12 +893,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     
 }
 
-.label-checkbox-text:checked .icon-modal-checkbox  {
+.modal-input-hidden:checked + .span-checkbox-custom {
+    background-color: #404bbf;
     border: none;
-    border-radius: 2px;
-    fill: #404bbf;
-    border: 1px solid #404bbf;
+    fill: #F4F4FD;
 }
+
+/* .modal-input-hidden:checked + .modal-input-hidden > .span-checkbox-custom  {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+} */
 
 
 .modal-accept-link {
@@ -917,9 +924,10 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
+    cursor: pointer;
     
 
     display: block;
@@ -927,7 +935,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     justify-content: center;
     align-items: center;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover, .modal-button:focus {
