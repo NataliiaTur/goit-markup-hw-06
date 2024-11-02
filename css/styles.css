@@ -727,8 +727,14 @@ address {
 }
 
 @media screen and (min-width: 1158px) {
+
     .descriptn-footer {
         max-width: 264px;
+        margin: 0;
+    }
+
+    .footer-social-menu {
+        margin: 0;
     }
 
     .footer-input {
