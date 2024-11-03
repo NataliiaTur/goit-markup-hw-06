@@ -575,6 +575,7 @@ address {
 .team-section-container {
     padding-top: 96px;
     padding-bottom: 96px;
+    align-items: center;
 }
 
 .team-section-title {
@@ -608,13 +609,11 @@ address {
 }
 
 .team-card {
-    display: block;
-    align-items: center;
-    flex-direction: column;
     padding-bottom: 32px;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    max-width: 264px;
 }
 
 .team-card:not(:last-child) {
