@@ -656,6 +656,11 @@ address {
     background-color: #404bbf;
 }
 
+@media screen and (max-width: 767px) {
+.team-section-container {
+    width: 296px;
+}
+}
 
 
 
