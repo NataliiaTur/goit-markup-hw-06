@@ -365,6 +365,15 @@ address {
     max-width: 320px;
 }
 
+@media screen and (min-resolution: 2dppx), 
+(min-resolution: 192dpi), 
+(-webkit-min-device-pixel-ratio: 2) {
+    .big-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bg-mob-2x.jpg);
+    }
+}
+
 .big-section-title {
     font-weight: 700;
     font-size: 36px;
@@ -412,6 +421,14 @@ address {
         padding: 112px 0;
         }
 
+        @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), 
+        (-webkit-min-device-pixel-ratio: 2) {
+            .big-section {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                        url(../images/hero-bg-mob-2x.jpg);
+            }
+        }
+
     .big-section-title {
         font-size: 56px;
         line-height: 1.07;
@@ -433,6 +450,15 @@ address {
         max-width: 1158px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), 
+    (-webkit-min-device-pixel-ratio: 2) {
+        .big-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)), 
+                        url(../images/people-office-2x.jpg);
+        }
     }
 
     .big-section-title {
@@ -481,6 +507,10 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.ftr-card-text {
+    margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -536,6 +566,118 @@ address {
         font-weight: 400;
     }
 }
+
+/* ----- Section Team */
+
+.team-section {
+    background-color: #f4f4fd;
+}
+.team-section-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.team-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42; 
+    margin-bottom: 72px;
+}
+
+.team-thumb-foto {
+    padding-bottom: 32px;
+}
+
+.team-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-card-text {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-card {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.team-social-menu {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.team-social-link {
+    width: 40px;
+    height: 40px;
+}
+
+.page-social {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link {
+    fill: #f4f4fd;
+    /* position: absolute; */
+}
+
+.page-social:hover,
+.page-social:focus {
+    cursor: pointer;
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+
+    .team-section-container {
+        margin: 0;
+    }
+    .team-menu {
+        display: flex;
+        gap: 64px 24px;
+        flex-wrap: wrap;
+    }
+
+    .team-card {
+        width: calc((100% - 24px) / 2);
+        margin: 0;
+    }
+
+    .team-thumb-foto {
+        /* margin: 0; */
+        /* display: block; */
+    }
+}
+
+
 
 
  <!--footer-->
@@ -693,6 +835,10 @@ address {
         flex-wrap: wrap;
         gap: 72px 24px;
     }
+
+        .section-footer {
+        background-color: #2e2f42;
+        }
 
     .footer-logo {
         justify-content: left;
