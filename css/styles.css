@@ -575,7 +575,7 @@ address {
 .team-section-container {
     padding-top: 96px;
     padding-bottom: 96px;
-    align-items: center;
+    
 }
 
 .team-section-title {
@@ -587,6 +587,10 @@ address {
     text-transform: capitalize;
     color: #2e2f42; 
     margin-bottom: 72px;
+}
+
+.team-menu {
+    
 }
 
 .team-thumb-foto {
@@ -614,10 +618,8 @@ address {
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     max-width: 264px;
-}
-
-.team-card:not(:last-child) {
     margin-bottom: 72px;
+    
 }
 
 .team-social-menu {
@@ -652,28 +654,6 @@ address {
 .page-social:focus {
     cursor: pointer;
     background-color: #404bbf;
-}
-
-@media screen and (min-width: 768px) {
-
-    .team-section-container {
-        margin: 0;
-    }
-    .team-menu {
-        display: flex;
-        gap: 64px 24px;
-        flex-wrap: wrap;
-    }
-
-    .team-card {
-        width: calc((100% - 24px) / 2);
-        margin: 0;
-    }
-
-    .team-thumb-foto {
-        /* margin: 0; */
-        /* display: block; */
-    }
 }
 
 
