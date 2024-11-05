@@ -280,12 +280,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     padding: 32px 16px;
 } */
 
-.portfolio-thumb-foto {
+/* .portfolio-thumb-foto {
     position: relative;
     overflow: hidden;
-}
+} */
 
-.prtfl-overlay-text {
+/* .prtfl-overlay-text {
     position: absolute;
     font-weight: 400;
     font-size: 16px;
@@ -300,9 +300,9 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px 32px;
-}
+} */
 
-.portfolio-card:hover .prtfl-overlay-text {
+/* .portfolio-card:hover .prtfl-overlay-text { */
     transform: translateY(0%);
 }
 
