@@ -448,7 +448,7 @@ address {
     .big-section {
         padding-top: 188px;
         padding-bottom: 188px;
-        max-width: 1158px;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
@@ -683,7 +683,7 @@ address {
         
     }
     .team-card {
-        width: calc(100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 
@@ -728,10 +728,6 @@ address {
     display: none;
 }
 
-.prtfl-foto {
-    max-width: 288px;
-}
-
 .prtfl-card-title {
     font-weight: 500;
     font-size: 20px;
@@ -756,7 +752,6 @@ address {
 }
 
 .portfolio-card {
-    max-width: 288px;
     border-top: none;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
